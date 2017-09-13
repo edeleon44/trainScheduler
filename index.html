@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<title>Train Schedule</title>
+</head>
+<body>
+<div class="container">
+	<div id="trainJum" class="container">
+		<div id="innerJum" class="jumbotron">
+  			<h1 id="textJum">Hop on the Train!</h1>
+  				<p id="paraJum">Don't be late for your ride on DeLeon Express!</p>
+		</div>
+	</div>
+</div>
+<!--Train Schedule -->
+	<div class="panel panel-primary">
+  		<div class="panel-heading">
+    		<h3 class="panel-title">Current Train Schedule</h3>
+  		</div>
+  	<div class="panel-body">
+		<div class="row">
+  	  		<div class="col-md-2">Train name
+				<h5 id="name-display"></h5>
+  	  		</div>
+  	  		<div class="col-md-2">Destination
+				<h5 id="destination-display"></h5>
+  	  		</div>
+  	  		<div class="col-md-2">Frequency(min)
+				<h5 id="frequency-display"></h5>
+  	  		</div>
+  	  		<div class="col-md-2">Next Arrival
+				<h5 id="arrival-display"></h5>
+  	  		</div>
+  	  <div class="col-md-2">Minutes Away
+				<h5 id="away-display"></h5>
+  	  </div>
+  	</div>
+  	<hr>  
+  </div>
+</div>
+<!-- Input for Train -->
+<div class='row'>
+			<div class="panel panel-primary">
+			  <div class="panel-heading">Add Train</div>
+			  <div class="panel-body">
+  	            <form role="form">
+	              <div class="form-group">
+	                <label for="name-input">Train Name</label>
+	                <input class="form-control" id="name-input" type="text">
+	              </div>
+	              <div class="form-group">
+	                <label for="destination-input">Destination</label>
+	                <input class="form-control" id="destination-input" type="text">
+	              </div>
+	              <div class="form-group">
+	                <label for="frequency-input">Frequency(min)</label>
+	                <input class="form-control" id="frequency-input" type="text">
+	              </div>
+	   
+	              <button class="btn btn-primary" id="add-train" type="submit">Submit</button>
+	            </form>
+
+			  </div>
+			</div>
+		</div>
+
+<script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="assets/script.js"></script>
+</body>
+</html>
