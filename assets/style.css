@@ -1,15 +1,24 @@
 #trainJum {
 	text-align: center;
+	
+
 }
 
 #innerJum {
-	background:#f7f7f7 ;
+	background:tan;
+
 }
+
 
 h1#textJum {
 	text-align: center;
+	color:white;
 }
 
 #paraJum {
 	text-align: center;
+}
+
+.theDiv {
+	opacity: .90;
 }
